@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<style>
+.bubble p{
+  border-radius: 60px 60px 60px 60px;
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: auto;
+  background-color: #c1aed4;
+}
+
+.image {
+  float: left;
+}
+
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2px;
+}
+
+.bttm {
+  border-radius: 60px 60px 60px 60px;
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: auto;
+  background-color: #c1aed4;
+}
+</style>
+<html>
+	<body>
+		<div class = "bubble">
+			<p>
+			Hi all, my name is Jordan Boykin. <br>
+			My family and friends are very important to me, as well as my values towards other people. 
+			I don’t judge books by their covers and it’s enjoyable to meet different kinds of people, even though I can be quiet most of the time. 
+			My shyness has been a motivator to get out of my comfort zone and try new things. The possibility of making someone’s day better, even a little bit makes me happy. 
+			I can hope that they will pass it on to someone else in some way. The people close to me are incredibly important because they’ve helped to shape who I am today and who I will be tomorrow. 
+			Luckily I’ve had a group of great friends and family to spend time with and I couldn’t trade it for anything.<br>
+			I find that I am passionate about learning new information, specifically history and philosophy. Looking back through history and the way people thought about life is a driving force in its own way for me, providing a perspective on my place in the world. Motivation comes from being someone who would have inspired myself 10 years ago.<br> I’m planning on transferring to UNCW for a comp sci degree based on the fact that the way computing works and has developed over thousands of years is fascinating to me. <br>
+			For skills, I would say problem solving is my strongest. Diagnosing things can be rough but ultimately I find it fun. Working with cars, programming, and cooking are things I enjoy in my spare time along with video games when I can. I’ve recently started working out for my PED class and it’s definitely something to make a habit. I never thought that it could be fun until now, and it’s almost like a time to mentally relax after work. </p4>
+			</p>
+		</div>
+		<div class = "container">
+			<div class = "image">
+				<img src = "{% static "img1.png" %}" alt="Image of me." >
+			</div>
+			<div class = "bttm">
+				<P> I am definitely not good with candid pictures, editing pictures, or design but its worth a try!</p>
+			</div>
+	</body>
+</html>
+{%endblock%}
